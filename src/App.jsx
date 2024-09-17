@@ -31,8 +31,10 @@ function App() {
   };
 
   return (
+    
     <div className='content'>
-      <h1>Hola {nombre}</h1>
+
+      <h1 className='title'>Hola {nombre}</h1>
       <form  className= 'formulario' onSubmit={(e) => checkPassword(e)}>
         
         {/* Usuario */}

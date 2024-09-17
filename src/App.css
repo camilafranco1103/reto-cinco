@@ -27,16 +27,23 @@ label{
   row-gap: 6px;
   padding: 12px;
   border-radius: 10px;
-  background-color: green;
-  
+  background-color: #384B70;
+}
+
+.title{
+  border-radius: 10px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 .content{
+  color: black;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
+  background-color: #A594F9;
 }
 
