@@ -5,8 +5,8 @@ import JSConfetti from 'js-confetti';
 function App() {
   const [nombre, setNombre] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
-  
+  const [bienvenido, setBienvenido] = useState(false)
+  const [error, setError] = useState("");   
 
   const actualizarNombre = (e) => {
     setNombre(e.target.value);
@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className='contenido'>
+    <div className='content'>
       <h1>Hola {nombre}</h1>
       <form  className= 'formulario' onSubmit={(e) => checkPassword(e)}>
         
@@ -56,8 +56,10 @@ function App() {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
+        
         {error && <p style={{ color: 'red' }}>{error}</p>}
-        <button style={{ marginTop: '20px' }}>Entrar</button>
+        <button className='btn'>Entrar</button>
+
       </form>
       {bienvenido && (
         <div style={{ marginTop: '20px' }}>
